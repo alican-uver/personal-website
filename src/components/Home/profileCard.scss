@@ -1,0 +1,57 @@
+.card-container {
+  text-align: center;
+  padding-top: 100px;
+  // card left
+  &-left {
+    background-color: #f4ece6;
+    padding: 3rem 0 0 !important;
+    box-shadow: -9px 7px 24px -8px rgba(0,0,0,0.63);
+    img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      opacity: 0.9;
+    }
+    &-name {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin: 0;
+      line-height: 30px;
+      letter-spacing: 2px;
+    }
+    &-line {
+      display: inline-block;
+      width: 30px;
+      height: 2px;
+      background-color: #4564f6;
+      margin-top: 20px;
+    }
+    &-job {
+      font-size: 20px;
+      font-weight: 300;
+    }
+    // social media
+    .social-media-container{
+      background-color: #fff;
+      padding: 1rem 0;
+      margin-top: 2rem;
+      a{
+        color:#000;
+        &:hover{
+          color:#4564f6;
+        }
+      }
+      i{
+        font-size: 1.5rem;
+      }
+    }
+  }
+  // card right
+  &-right {
+    &-title {
+      font-size: 3rem;
+      font-weight: 700;
+    }
+  }
+}
