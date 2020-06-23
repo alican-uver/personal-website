@@ -1,6 +1,6 @@
 .card-container {
   text-align: center;
-  padding-top: 100px;
+  padding: 100px 0;
   // card left
   &-left {
     background-color: #f4ece6;
@@ -53,5 +53,14 @@
       font-size: 3rem;
       font-weight: 700;
     }
+    p:nth-of-type(2) {
+      font-size: 1.3rem;
+      font-weight: 600;
+    }
+    &-info{
+      letter-spacing: 0.5px;  
+      line-height: 25px;
+    }
+
   }
 }

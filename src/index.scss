@@ -9,3 +9,19 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* Button Compenent */
+.button {
+  min-width: 100px;
+  margin: 10px;
+  padding: 0.3rem 0;
+  border: 2px solid black;
+  border-radius: 5px;
+  background-color: transparent;
+  outline: none !important;
+  &:hover {
+    background-color: #4564f6;
+    color: #fff;
+  }
+}
+
