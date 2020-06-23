@@ -1,15 +1,21 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'; 
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import NavBar from './components/Navbar/NavBar';
 import Home from './pages/Home/Home';
 import Footer from './components/Footer/Footer';
+import Resume from './pages/Resume';
+import Projects from './pages/Projects';
+import Contact from './pages/Contact';
 
 function App() {
   return (
     <Router>
       <NavBar />
       <Switch>
-        <Route path="/" component= {Home} />
+        <Route exact path="/" component={Home} />
+        <Route exact path="/cv" component={Resume} />
+        <Route exact path="/projects" component={Projects} />
+        <Route exact path="/contact" component={Contact} />
       </Switch>
       <Footer />
     </Router>
