@@ -1,20 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
+
 body {
   margin: 0;
-  font-family: 'Open Sans', sans-serif;  -webkit-font-smoothing: antialiased;
+  font-family: "Open Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
-/* Button Compenent */
+/* Button Component */
 .button {
   min-width: 100px;
   margin: 10px;
-  padding: 0.3rem 0;
+  padding: 0.4rem;
   border: 2px solid black;
   border-radius: 5px;
   background-color: transparent;
@@ -25,3 +27,77 @@ code {
   }
 }
 
+// Social Media Component
+.social-media-container {
+  width: 100%;
+  background-color: #fff;
+  padding: 1rem 0;
+  a {
+    color: #000;
+    &:hover {
+      color: #4564f6;
+    }
+  }
+  i {
+    font-size: 1.5rem;
+  }
+}
+
+// PageTitle Component
+.page-title {
+  text-align: center;
+  font-size: 2rem;
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: #4564f6;
+    margin-right: 10px;
+  }
+}
+
+// bg gradient
+.responsive-bg-gradient {
+  min-height: 100vh;
+}
+
+@media screen and (max-width: 767px) {
+  .responsive-bg-gradient {
+    background: linear-gradient(
+      to bottom,
+      #fff 40%,
+      #e6dace 40%,
+      #e6dace 100%
+    ) !important;
+  }
+}
+
+// Changing page animation
+.page {
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.page-enter {
+  opacity: 0;
+  transform: scale(1.1);
+}
+
+.page-enter-active {
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.page-exit {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.page-exit-active {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 300ms, transform 300ms;
+}

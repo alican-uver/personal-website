@@ -1,0 +1,24 @@
+.contact-form {
+  max-width: 45rem;
+  width: 100%;
+  margin: auto;
+  background-color: #fff;
+  padding: 3rem;
+  .form-group {
+    padding-top: 10px;
+    input,
+    textArea {
+      background-color: transparent;
+      border: 0;
+      border-bottom: 1px solid #4564f6;
+      border-radius: 0;
+      resize: none;
+      box-shadow: none;
+      transition: 0.2s linear;
+      &:hover, &:focus {
+        border-bottom: 3px solid #4564f6;
+      }
+    }
+  }
+  
+}
