@@ -24,7 +24,7 @@ const ProjectCard = () => {
       })
     setTimeout(() => {
       setLoading(false)
-    }, 500);
+    }, 700);
   }, [])
 
   return (

@@ -27,9 +27,9 @@ const ProfileCard = () => {
         <Link to="/projects"><Button name="Projelerim" /></Link>
         <p className="card-container-right-info pt-4">
           Jeoloji mühendisliği mezunuyum fakat, kendimi bu alanda geliştirmeye başladığımdan
-          beri, ne kadar sevdiğimi ve bu alan için çalışmak istediğimi farkettim. Benim için 
+          beri, ne kadar sevdiğimi ve bu alan için çalışmak istediğimin farkına vardım. Benim için 
           gelişim hiçbir zaman sona ermeyecek. Elimden gelenin en iyisini yapmak için sürekli
-          çalışıyorum. 
+          çalışıyorum.
         </p>
       </Col>
     </Row>
