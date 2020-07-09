@@ -12,8 +12,12 @@ const SocialMedia = () => {
             >
                 <i className="fab fa-stack-overflow"></i>
             </a>
-            <a href="https://github.com/alican-uver">
+            <a className="pr-4"
+                href="https://github.com/alican-uver">
                 <i className="fab fa-github"></i>
+            </a>
+            <a href="https://codepen.io/codebyalican">
+                <i class="fab fa-codepen"></i>
             </a>
         </div>
     )
