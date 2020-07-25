@@ -26,10 +26,9 @@ const ProfileCard = () => {
         <a download href="../my_resume/AlicanUVER_CV.pdf"><Button name="Özgeçmiş" /></a>
         <Link to="/projects"><Button name="Projelerim" /></Link>
         <p className="card-container-right-info pt-4">
-          Jeoloji mühendisliği mezunuyum fakat, kendimi bu alanda geliştirmeye başladığımdan
-          beri, ne kadar sevdiğimi ve bu alan için çalışmak istediğimin farkına vardım. Benim için 
-          gelişim hiçbir zaman sona ermeyecek. Elimden gelenin en iyisini yapmak için sürekli
-          çalışıyorum.
+          Jeoloji mühendisliği mezunuyum. Kendimi bu alanda geliştirmeye başladığımdan
+          beri, ne kadar sevdiğimin ve bu alan için çalışmak istediğimin farkına vardım ve serüven başladı. Benim için 
+          gelişim hiçbir zaman sona ermeyecek.
         </p>
       </Col>
     </Row>

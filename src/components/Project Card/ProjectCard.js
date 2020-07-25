@@ -15,10 +15,10 @@ const ProjectCard = () => {
     })
       .then(items => {
         let projects = items.items.map(item => {
-          const { title, tools, description, link } = item.fields;
+          const { title, tools, description, codeLink, liveLink } = item.fields;
           const { id } = item.sys;
           const image = item.fields.image.fields.file.url
-          return { title, tools, description, link, id, image }
+          return { title, tools, description, codeLink, liveLink, id, image }
         })
         setProjects(projects)
       })
@@ -37,7 +37,10 @@ const ProjectCard = () => {
               <h2 className="project-card-name">{project.title}</h2>
               <small className="project-card-tools text-muted">{project.tools}</small>
               <p className="project-card-description">{project.description}</p>
-              <a href={project.link}>Kodları İncelemek İçin</a>
+              <div className="project-card-links">
+                  <a className="project-card-link mb-4" href={project.codeLink}>Kodları İncelemek İçin</a>
+                  <a className="project-card-link" href={project.liveLink}>Canlı Görmek için</a>
+              </div>
             </Col>
             <Col md={5} className="img-container mx-auto">
               <img className="img-container-item" src={project.image} alt="project-img" />
