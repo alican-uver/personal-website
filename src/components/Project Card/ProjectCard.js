@@ -51,8 +51,8 @@ const ProjectCard = () => {
                 <h2 className="project-card-name">{project.title}</h2>
                 <small className="project-card-tools text-muted">{project.tools}</small>
                 <p className="project-card-description">{project.description}</p>
-                <div className="project-card-links">
-                  <a className="project-card-link mb-4" href={project.codeLink}>Kodları İncelemek İçin</a>
+                <div className="project-card-links d-flex justify-content-between">
+                  <a className="project-card-link mb-3" href={project.codeLink}>Kodları İncelemek İçin</a>
                   <a className="project-card-link" href={project.liveLink}>Canlı Görmek için</a>
                 </div>
               </Col>

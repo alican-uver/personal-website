@@ -67,6 +67,9 @@ code {
 }
 
 @media screen and (max-width: 767px) {
+  html {
+    font-size: 14px !important;
+  }
   .responsive-bg-gradient {
     background: linear-gradient(
       to bottom,
