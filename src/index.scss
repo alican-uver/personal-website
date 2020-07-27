@@ -21,9 +21,13 @@ code {
   border-radius: 5px;
   background-color: transparent;
   outline: none !important;
+  position: relative;
   &:hover {
     background-color: #4564f6;
     color: #fff;
+  }
+  &-badge {
+    margin-left: 7px;
   }
 }
 
